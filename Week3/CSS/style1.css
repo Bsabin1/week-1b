@@ -1,0 +1,111 @@
+body{
+display:flex;
+justify-content: center;
+background-color: black;
+height:100vh;
+}
+
+
+#header{
+    height: 130px;
+    border: 20px; color: aqua;
+    font-size: 75px;
+
+}
+@keyframes alternating-colors {
+  0%  { color: red; }
+  25%  { color: orange; }
+  50%  { color: green; }
+  75%  { color: blue; }
+  100% { color: purple; }
+}
+
+
+#main{
+
+    border: 10px; color: black;
+    width:1000px;
+    height:800px;
+
+}
+.nav-btn {
+  text-decoration: none;
+  color: rgb(174, 200, 28);
+  background-color: #b41111;
+  padding: 10px 15px;
+  margin: 5px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+.nav-btn:hover{
+    font-size: 20px;
+    color: rgb(11, 143, 46);
+    text-decoration: underline;
+}
+
+.nav-btn:visited{
+    text-decoration: line-through;
+    color: rgb(42, 130, 165);
+    
+}
+
+
+
+h1 {
+    font-family: "Creepster", "system-ui";
+    font-size: 100px;
+    text-align: center
+}
+
+h2{
+    font-size: 50px;
+    color: purple;
+    
+}
+#bones{
+    height: 200px;
+    animation-duration: 3s;
+    animation-name: Bones;
+    animation-iteration-count: infinite;
+    
+}
+p{
+    font: 20;
+    color: beige;
+    animation: alternate;
+    animation-duration: 4s;
+
+
+}
+.rotate-gif {
+  animation: spin 5s linear infinite;
+  display: block;
+  margin: 0 auto;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.color-cycle {
+  animation: cycleColors 5s linear infinite;
+}
+
+@keyframes cycleColors {
+  0%   { color: red; }
+  25%  { color: orange; }
+  50%  { color: green; }
+  75%  { color: blue; }
+  100% { color: purple; }
+}
+
+#footer{
+    color:white;
+    text-align: center;
+}
