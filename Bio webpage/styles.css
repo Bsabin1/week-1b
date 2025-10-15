@@ -14,13 +14,7 @@
     background-color: rgb(28, 151, 151);
 }
 
-.body-cursor {
-    cursor: url(../images/icons8-cursor-40.png), auto;
-}
 
-a {
-    cursor: url(../images/icons8-cursor-40.png), auto;
-}
 
 .sup-text {
     font: 20px;
