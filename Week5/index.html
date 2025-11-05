@@ -1,0 +1,113 @@
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>
+            Tables and Forms | Week 5
+
+        </title>
+        
+        <style>
+            table,tr,td,th{
+                border: 1px solid black;
+            }
+
+            tr:nth-child(even)
+            {
+                background-color: rgb(241, 166, 68);
+            }
+        </style>
+    
+</head>
+
+    <body>
+        <h1>Week 5 Tables and Forms</h1>
+        <h2>Table example</h2>
+        <table>
+            <thead>
+                <tr>
+                <th> First name </th>
+                <th> Last name </th>
+                <th> Program </th>
+                 </tr>
+
+            </thead>
+            <tbody> 
+                <tr>
+                <td>Brian</td>
+                <td>Sabin</td>
+                <td>Student</td>
+                </tr>
+                <tr>
+                    <td>Rob</td>
+                    <td>Cady</td>
+                    <td>Student</td>
+                </tr>
+                <tr>
+                    <td>Xavier</td>
+                    <td>Fishman</td>
+                    <td>Student</td>
+                </tr>
+            <tr>
+                     
+                <td> <form action="#" method="post">
+                <label for="username">Username:</label>
+                <input type="text" name="Username" placeholder="Enter Username">
+
+            </td>
+
+            </tr>
+
+            </tbody>
+
+        </table>
+        <h2>Basic Form Example</h2>
+        <form action="#" method="post">
+            <label for="username">Username:</label>
+            <br>
+            <input type="text" name="Username" placeholder="Enter Username">
+
+
+        </form>
+        <h2>Password example</h2>
+         <form action="#" method="post">
+            <label for="Password">Password:</label>
+            <br>
+            <input type="text" name="Password" placeholder="Enter Password">
+
+
+        </form>
+            <tr>
+                <td>Brian</td>
+                <td>Sabin</td>
+                <td>Student</td>
+            </tr>
+            <form action="#" method="get">
+                <table>
+                    <thead>
+                    <tr>
+                        <th>label</th>
+                        <th>Input</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                       <tr>
+                        <td><input type="text" name="text-input" required></td>
+
+
+
+                       </tr>
+
+
+
+                    </tbody>
+
+                </table>
+            </form>
+
+
+
+    </body>
+
+</html>

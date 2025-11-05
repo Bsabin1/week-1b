@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--The type of font we are using-->
+    <meta charset="UTF-8">
+    <!--Tells the -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Brian Sabin">
+    <meta name="description" content="Default HTML Page for SE 111">
+    
+    <link type="text/css" rel="stylesheet" href="style.css">
+
+    <title>Week 5 | Tables and Forms</title>
+</head>
+<body>
+    <!--Build your Table and Form here-->
+    <h1>Birthday party registrattion Form</h1>
+        <form action="confirm.html" method="GET">
+            <table>
+            <thread>
+                <tr>
+                    <td>
+                        <b>Lables</b>
+                    </td>
+                    <td>
+                        <b>Form Fields</b>
+                    </td>               
+                </tr>
+            </thread>
+            <tbody>
+                <tr>
+                    <td><label for="pName"> Parent/guardian Name</label></td>
+                    <td><input type="text" maxlength="30"name="pFirst" id="p-first" required placeholder="First Name"><br>
+                    <input type="text" maxlength="30" name="pLast" id="p-Last" required placeholder="Last name"></td>
+                </tr>
+
+                <tr>
+                    <td><label for="childFname">Childs First name</label></td>
+                    <td><input type="text" maxlength="30" name="cFirst" id="c-first" required placeholder="Childs First name"></td>
+                </tr>
+
+                <tr>
+                    <td><label for="childsAge">Childs Age</label></td>
+                    <td><input type="number" name="Age" id="age" required value="3"required placeholder="Age"></td>
+                </tr>
+
+                <tr>
+                    <td><h2><label for="Date&Time">Date and Time</label></h2></td>
+                </tr>
+
+                <tr>
+                    <td><label for="Date">Date</label></td>
+                    <td><input type="date" name="date" id="date"required></td>
+                </tr>
+
+                <tr>
+                    <td><label for="time">Start time</label></td>
+                    <td><input type="time" name="Time" id="start_Time" required></td>
+                </tr>
+
+                <tr>
+                    <td><label for="#ofPeople">Number of People</label></td>
+                    <td><input type="number" name="People" required value="10"></td>
+                </tr>
+
+                <tr>
+                    <td><h2><label for="food">Food</label></h2></td>
+                </tr>
+
+                <tr>
+                    <td><label for="size">Size</label></td>
+                    <td><input type="radio" name="size" value="SM" required>small
+                        <input type="radio" name="size" value="MED" required>medium
+                        <input type="radio" name="size" value="LRG" required>large
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Drink Choices</td>
+                    <td><input type="checkbox" name="Drink1" id="D1" checked value="Water"> Water
+                        <input type="checkbox" name="Drink2" id="D2" value="coffee"> Coffee<br>
+                        <input type="checkbox" name="Drink2" id="D2" value="Coke"> Coke<br>
+                        <input type="checkbox" name="Drink2" id="D2" value="Tea"> Tea<br>
+                        <input type="checkbox" name="Drink2" id="D2" value="Seltzer"> Seltzer<br>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="Cake"> Cake </label>
+                    </td>
+                    <td>
+                        <select name="Cake" id="Cake">
+                        <option value="" disabled selected> Cake Flavor</option>
+                        <option value="vanilla">Vanilla</option>
+                        <option value="chocolate">Chocolate</option>
+                        <option value="icecream">Icecream</option>
+                        <option value="no prefrence">No Prefrence</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><h2><label for="decorations">Decorations</label></h2></td>
+                </tr>
+
+                <tr>
+                    <td><label for="color">Color Prefrence</label></td>
+                    <td>Select a color Prefrence<br>
+                    <input type="color" name="color" id="color"></textarea></td>
+                </tr>
+
+                <tr>
+                    <td><label for="allergies">Allergy Comments</label></td>
+                    <td><textarea name="allergies" id="allergies" required placeholder="Please list Allergies"></textarea></td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <br>
+                    </td>
+                    <td><input type="submit" value="submit">
+                    </td>
+                </tr>
+
+            </tbody>
+            </table>
+        </form>
+</body>
+</html>

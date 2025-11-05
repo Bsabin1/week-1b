@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript Lab</title>
+</head>
+
+<body>
+    <!--  -->
+
+    <script>
+        var numOne = prompt("what number would you like to start with")
+        var numTwo = prompt("next number");
+        var choice = prompt("add or multiply")
+        numOne = Number(numOne)
+        numTwo = Number(numTwo)
+
+        function add(a, b) {
+            return a + b;
+        }
+        function multiply(a, b) {
+            return a * b;
+        }
+       
+
+        if (choice == "add") {
+            console.log(add(numOne, numTwo))
+        }
+        if (choice == "multiply") {
+            console.log(multiply(numOne, numTwo))
+        }
+
+
+
+    </script>
+</body>
