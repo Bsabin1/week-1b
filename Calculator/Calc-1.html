@@ -10,7 +10,7 @@
      <script>
         var hourlyWage = prompt("What is your hourly wage?")
         var hoursWorked = prompt("How many hours did you work in the past 2 Weeks?");
-        var taxRate = prompt("What is your states tax rate?")
+        var taxRate = prompt("What is your states tax rate (20%)?")
         hourlyWage = Number(hourlyWage)
         hoursWorked = Number(hoursWorked)
 
@@ -29,5 +29,9 @@
         console.log("Uncle Sams Share (20%): $" + (grossPay * taxRate));
         console.log("Net Pay: $" + netpay);
 
+        alert(
+        "Gross Pay: $" + grossPay + "\n" +
+        "Uncle Sams Share (20%): $" + (grossPay * taxRate) +"\n" +
+        "Net Pay: $" + netpay)
     </script>
 </body>
