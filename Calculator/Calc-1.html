@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Pay Calculator Lab</title>
+</head>
+
+<body>
+     <script>
+        var hourlyWage = prompt("What is your hourly wage?")
+        var hoursWorked = prompt("How many hours did you work in the past 2 Weeks?");
+        var taxRate = prompt("What is your states tax rate?")
+        hourlyWage = Number(hourlyWage)
+        hoursWorked = Number(hoursWorked)
+
+        var taxRate = .20; 
+        var grossPay = gross(hourlyWage, hoursWorked);
+        var netpay = net(grossPay, taxRate);
+        
+        function gross(wage, hours) {
+            return wage * hours;
+        }
+        function net(gross, taxRate) {
+            return gross * (1-taxRate);
+        }
+       
+        console.log("Gross Pay: $" + grossPay);
+        console.log("Uncle Sams Share (20%): $" + (grossPay * taxRate));
+        console.log("Net Pay: $" + netpay);
+
+
+        document.write("Gross Pay: $" + grossPay);
+        document.write("Uncle Sams Share (20%): $" + (grossPay * taxRate));
+        document.write("Net Pay: $" + netpay);
+
+        
+        
+
+
+
+    </script>
+</body>
